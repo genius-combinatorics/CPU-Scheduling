@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/97f5b61a-3a43-4ef7-911b-ca03d9a5f9ed)
 ![image](https://github.com/user-attachments/assets/1dcfea6a-36e9-49f6-bdf0-5a1a47a4e426)
 
-
+<pre>
 ##This code implements three CPU scheduling algorithms:
 
 First-Come-First-Served (FCFS)
@@ -9,7 +9,6 @@ First-Come-First-Served (FCFS)
 Shortest Job First (SJF) (Non-Preemptive)
 
 Round Robin (RR)
-
 
 
 
@@ -39,6 +38,8 @@ avgWaiting: (Turnaround Time – Burst Time) averaged
 
 avgResponse: (Start Time – Arrival Time) averaged
 
+
+	
 2. First-Come-First-Served (FCFS)
 AlgorithmL
 Processes are executed in order of arrival.
@@ -111,12 +112,14 @@ Response Time ↓: Every process gets CPU quickly (good for interactivity).
 ##
 The test cases evaluate FCFS, SJF, and RR under different scenarios. Below is a breakdown of each test case, explaining inputs, expected outputs, and which algorithm performs best in each scenario.
 
+
+															
 Test Case 1: Three Processes with Increasing Burst Times
 Input
 Process	Arrival	Burst
-P1	0	10
-P2	1	5
-P3	2	8
+P1  0	10  
+P2	1	5  
+P3	2	8  
 Results
 Algorithm	Turnaround	Waiting	Response
 FCFS	15.00	7.33	7.33
@@ -132,6 +135,7 @@ Best Algorithm:
 For response time: RR (best for interactivity).
 
 For turnaround/waiting: FCFS/SJF (same here, but SJF usually better when short jobs arrive early).
+
 
 Test Case 2: Processes with Gaps (Idle CPU)
 Input
@@ -152,6 +156,10 @@ RR still has slightly better response time (1.00 vs 1.67).
 Best Algorithm:
 
 RR (better response, same turnaround).
+
+
+	
+	
 
 Test Case 3: Short Job Arrives Later (SJF Advantage)
 Input
@@ -176,6 +184,11 @@ For turnaround/waiting: SJF (optimal for batch processing).
 
 For response time: RR (best for interactive systems).
 
+
+	
+	
+	
+	
 Test Case 4: Mixed Burst Times with Overlapping Arrivals
 Input
 Process	Arrival	Burst
@@ -200,6 +213,11 @@ For minimizing waiting time: SJF.
 
 For fairness/response: RR.
 
+
+	
+	
+	
+
 Test Case 5: Single Process (Edge Case)
 Input
 Process	Arrival	Burst
@@ -214,6 +232,10 @@ Best Algorithm:
 
 Any (no difference).
 
+
+	
+	
+	
 Test Case 6: Two Processes, Same Arrival Time
 Input
 Process	Arrival	Burst
@@ -234,6 +256,9 @@ For throughput: FCFS/SJF.
 
 For fairness: RR.
 
+
+	
+	
 Test Case 7: Varying Arrivals with Long & Short Jobs
 Input
 Process	Arrival	Burst
@@ -257,6 +282,12 @@ For batch processing: SJF.
 
 For interactive systems: RR.
 
+
+	
+	
+	
+	
+	
 Test Case 8: Six Processes with Random Arrivals
 Input
 Process	Arrival	Burst
@@ -271,6 +302,11 @@ Algorithm	Turnaround	Waiting	Response
 FCFS	17.00	11.17	11.17
 SJF	15.17	9.33	9.33
 RR (Q=4)	20.67	14.83	6.33
+
+
+
+
+	
 Analysis
 SJF is best for minimizing waiting time.
 
@@ -282,8 +318,8 @@ For batch jobs: SJF.
 
 For time-sharing: RR.
 
-Final Summary: Which Algorithm is Best?
-Scenario	Best Algorithm	Why?
+Final Summary:
+
 Short jobs arrive late	FCFS/SJF (same)	No optimization possible
 Idle CPU periods	RR (best response)	No contention, but RR still fair
 Short jobs arrive early	SJF	Minimizes waiting time
@@ -301,3 +337,4 @@ RR is best for response time (interactive systems) but has higher overhead.
 
 The test cases validate that each algorithm behaves as expected under different workloads
 #
+</pre>
