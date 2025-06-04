@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/97f5b61a-3a43-4ef7-911b-ca03d9a5f9ed)![image](https://github.com/user-attachments/assets/a7d3c362-9d7a-44aa-85b2-9174c901cfe0)
+![image](https://github.com/user-attachments/assets/97f5b61a-3a43-4ef7-911b-ca03d9a5f9ed)
 ![image](https://github.com/user-attachments/assets/1dcfea6a-36e9-49f6-bdf0-5a1a47a4e426)
 
 
@@ -9,6 +9,11 @@ First-Come-First-Served (FCFS)
 Shortest Job First (SJF) (Non-Preemptive)
 
 Round Robin (RR)
+
+
+
+
+
 
 Process Structure (Process)
 Each process has:
